@@ -1,0 +1,19 @@
+{
+  "name": "jedi-backend",
+  "version": "1.0.0",
+  "description": "Star wars api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmanuelnwankwo/jedi-backend.git"
+  },
+  "author": "Emmanuel Nwankwo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmanuelnwankwo/jedi-backend/issues"
+  },
+  "homepage": "https://github.com/emmanuelnwankwo/jedi-backend#readme"
+}
