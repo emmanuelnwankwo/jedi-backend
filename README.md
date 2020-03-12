@@ -1,5 +1,5 @@
 # jedi-backend
-    Star wars movie api from [Swapi](https://swapi.co/api/)
+   Star wars movie api from [Swapi](https://swapi.co/api/)
 ## Getting Started
 
 ### prerequisites
