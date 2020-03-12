@@ -1,0 +1,91 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0",
+        "title": "jedi-backend",
+        "description": "jedi-backend"
+    },
+    "servers": [
+        {
+          "url": "http://localhost:3000/"
+        },
+        {
+          "url": "https://herokuapp.com/"
+        }
+      ],
+    "host": "",
+    "basePath": "/api",
+    "tags": [
+        {
+            "name": "Movie",
+            "description": "Endpoint for Movies"
+        }
+    ],
+    "paths": {
+        "/movies": {
+            "get": {
+                "description": "Return the list of movies",
+                "summary": "Get movies",
+                "tags": [
+                    "Movie"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "security": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/characters": {
+            "get": {
+                "description": "Return characters in all the movies",
+                "summary": "Get characters",
+                "tags": [
+                    "Movie"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "security": [],
+                "parameters": [
+                    {
+                        "in": "query",
+                        "name": "name",
+                        "required": false,
+                        "description": "Character name"
+                    },
+                    {
+                        "in": "query",
+                        "name": "gender",
+                        "required": false,
+                        "description": "Character gender"
+                    },
+                    {
+                        "in": "query",
+                        "name": "by",
+                        "required": false,
+                        "description": "Sort characters by 'asc' or 'desc'"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        }
+    },
+        "requestBody": {
+        }
+    }
+    
